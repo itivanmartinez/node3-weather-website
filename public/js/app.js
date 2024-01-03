@@ -17,7 +17,7 @@ weatherForm.addEventListener('submit', (e) => {
                 errorDisplay.innerHTML = '<p>'+data.error+'</p>'
             } else {
                 errorDisplay.innerHTML = '<p><div><span>Forecast:</span> '+data.forecast+'</div>'+
-                        '<div><span>City Name:</span> '+data.location+'</div>'+
+                        '<div><span>City Name:</span> '+data.location+'</div>'+'<span></span>'+
                         '<div><span>Address:</span> '+data.address+'</div>'
 
                 +'</p>'
