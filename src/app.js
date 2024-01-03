@@ -92,7 +92,7 @@ app.get('*', (req,res) => {
     res.send('<html><head><title>Error</title></head><body><h1>Your request was not approaved</h1></body></html>')
 })
 
-app.listen(3000, () => {
+app.listen(80, () => {
     console.log('Server is up')
 })
 
