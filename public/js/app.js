@@ -9,7 +9,9 @@ weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
     console.log('Sent!',search.value)
     
-    const url = 'http://localhost:3000/weather?address='+search.value
+    //const url = 'http://localhost:3000/weather?address='+search.value
+    const url = 'https://fair-rose-swordfish-shoe.cyclic.app/weather?address='+search.value
+
     fetch(url).then((response) =>{
         response.json().then((data) => {
             if(data.error){
